@@ -212,7 +212,7 @@ body {
 @media screen and (max-width: 600px) {
 	.color-bar-right {
 		position: fixed;
-		top: 26;
+		top: 26px;
 		bottom: 0;
 		height: 100vh;
 		width: 26px;
@@ -229,6 +229,14 @@ body {
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
+	}
+
+	.grid-day {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
 	}
 
 	.grid-content {
