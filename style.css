@@ -12,7 +12,7 @@ body {
 .color-bar-right {
 	position: fixed;
 	top: 0;
-	right: 0;
+	bottom: 0;
 	height: 100vh;
 	width: 40px;
 	display: flex;
@@ -73,9 +73,9 @@ body {
 .title {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
-	margin-bottom: 5%;
+	margin: 3% 0;
 }
 
 .title h2 {
@@ -192,6 +192,8 @@ body {
 .grid-todo {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 	gap: 20px;
 }
 
@@ -208,6 +210,20 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+	.color-bar-right {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		z-index: 1000;
+		background-color: transparent;
+	}
+
 	.title {
 		display: flex;
 		flex-direction: column;
