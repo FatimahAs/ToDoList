@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,103 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="icon" href="./to-do-list.png" />
+    <link href="./style.css" rel="stylesheet" />
     <title>To-Do List</title>
 </head>
 
 <body>
-    <header class="title">
-        <h3>Weekly plan</h3>
-    </header>
 
-</body>
-
-</html>-->
-
-
-<!DOCTYPE html>
-<html lang="ar">
-
-<head>
-    <meta charset="UTF-8">
-    <title>شريط ألوان متجاوب</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        
-        .color-bar {
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100vh;
-            width: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            z-index: 1000;
-            background-color: transparent;
-        }
-        
-        .color-box {
-            width: 100%;
-            height: 100px;
-            border-radius: 0 10px 10px 0;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .color1 {
-            background-color: #f7dfc3;
-        }
-        
-        .color2 {
-            background-color: #f4c89c;
-        }
-        
-        .color3 {
-            background-color: #f2a87b;
-        }
-        
-        .color4 {
-            background-color: #f49c87;
-        }
-        
-        .color5 {
-            background-color: #e97c5d;
-        }
-        
-        .color6 {
-            background-color: #9ab3a0;
-        }
-        
-        .color7 {
-            background-color: #7c8b83;
-        }
-        
-        .color8 {
-            background-color: #5b6f6a;
-        }
-        
-        .color9 {
-            background-color: #a0896f;
-        }
-        
-        .color10 {
-            background-color: #7c6451;
-        }
-    </style>
-</head>
-
-<body>
-
-
-    <div class="color-bar">
+    <div class="color-bar-right">
         <div class="color-box color1"></div>
         <div class="color-box color2"></div>
         <div class="color-box color3"></div>
@@ -117,6 +28,118 @@
     </div>
 
 
+    <header class="title">
+        <h2>Weekly plan</h2>
+        <input type="text" placeholder=" Title" class="line-input">
+    </header>
+
+
+    <main class="container">
+
+        <div class="grid-content">
+
+            <div class="grid-day">
+                <div class="day-todo">
+                    <h4>Sat</h4>
+                    <input type="text" placeholder=" your plan" class="line-input">
+                </div>
+                <div class="day-todo">
+                    <h4>Sun</h4>
+                    <input type="text" placeholder=" your plan" class="line-input">
+                </div>
+                <div class="day-todo">
+                    <h4>Mon</h4>
+                    <input type="text" placeholder=" your plan" class="line-input">
+                </div>
+                <div class="day-todo">
+                    <h4>Tue</h4>
+                    <input type="text" placeholder=" your plan" class="line-input">
+                </div>
+                <div class="day-todo">
+                    <h4>Wed</h4>
+                    <input type="text" placeholder=" your plan" class="line-input">
+                </div>
+                <div class="day-todo">
+                    <h4>Thu</h4>
+                    <input type="text" placeholder=" your plan" class="line-input">
+                </div>
+                <div class="day-todo">
+                    <h4>Fri</h4>
+                    <input type="text" placeholder=" your plan" class="line-input">
+                </div>
+            </div>
+
+            <div class="grid-todo">
+                <div class="todo-list">
+                    <h3>Goals</h3>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+                <div class="todo-list">
+                    <label class="custom-checkbox">
+                    <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+                <div class="todo-list">
+                    <label class="custom-checkbox">
+                    <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+
+
+
+
+                <div class="todo-list">
+                    <h3>Priorities</h3>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+                <div class="todo-list">
+                    <label class="custom-checkbox">
+                    <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+                <div class="todo-list">
+                    <label class="custom-checkbox">
+                    <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+
+
+
+                <div class="todo-list">
+                    <h3>Notes</h3>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+                <div class="todo-list">
+                    <label class="custom-checkbox">
+                    <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+                <div class="todo-list">
+                    <label class="custom-checkbox">
+                    <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+                    <input type="text" placeholder="" class="line-input">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
 
 </body>
 
