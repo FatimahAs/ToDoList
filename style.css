@@ -1,8 +1,11 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+}
+
+body {
 	background: #FEF9F3;
+	box-sizing: border-box;
 	font-family: "Delius", cursive;
 }
 
@@ -77,6 +80,39 @@
 
 .title h2 {
 	color: #7c6451;
+}
+
+.goals {
+	background: #9ab3a031;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Priorities {
+	background: #f49c8731;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Notes {
+	background: #eed87f31;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.todo-title img {
+	width: 10%;
+	left: 0;
 }
 
 .custom-checkbox input[type="checkbox"] {
@@ -159,17 +195,16 @@
 	gap: 20px;
 }
 
-.todo-list.goals {
-	background: white;
-	border-radius: 8px;
-	padding: 20px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.todo-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
 }
 
-.todo-list h3 {
-	text-align: left;
+.todo-title h3 {
 	color: #5b6f6a;
-	font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
