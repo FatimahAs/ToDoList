@@ -1,0 +1,129 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <header class="title">
+        <h3>Weekly plan</h3>
+    </header>
+
+</body>
+
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>شريط ألوان متجاوب</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        .color-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: width 0.3s ease;
+            z-index: 1000;
+            background-color: transparent;
+        }
+        
+        .color-box {
+            width: 100%;
+            height: 40px;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.2s;
+        }
+        
+        .color-box:hover {
+            transform: scale(1.1);
+        }
+        /* الألوان */
+        
+        .color1 {
+            background-color: #f7dfc3;
+        }
+        
+        .color2 {
+            background-color: #f4c89c;
+        }
+        
+        .color3 {
+            background-color: #f2a87b;
+        }
+        
+        .color4 {
+            background-color: #f49c87;
+        }
+        
+        .color5 {
+            background-color: #e97c5d;
+        }
+        
+        .color6 {
+            background-color: #9ab3a0;
+        }
+        
+        .color7 {
+            background-color: #7c8b83;
+        }
+        
+        .color8 {
+            background-color: #5b6f6a;
+        }
+        
+        .color9 {
+            background-color: #a0896f;
+        }
+        
+        .color10 {
+            background-color: #7c6451;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="color-bar" id="colorBar">
+        <div class="color-box color1"></div>
+        <div class="color-box color2"></div>
+        <div class="color-box color3"></div>
+        <div class="color-box color4"></div>
+        <div class="color-box color5"></div>
+        <div class="color-box color6"></div>
+        <div class="color-box color7"></div>
+        <div class="color-box color8"></div>
+        <div class="color-box color9"></div>
+        <div class="color-box color10"></div>
+    </div>
+
+
+
+</body>
+
+</html>
