@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-    <link rel="icon" href="./to-do-list.png" />
+    <link rel="icon" href="./img/to-do-list.png" />
     <link href="./style.css" rel="stylesheet" />
     <title>To-Do List</title>
 </head>
@@ -29,8 +29,14 @@
 
 
     <header class="title">
-        <h2>Weekly plan</h2>
-        <input type="text" placeholder=" Title" class="line-input">
+        <div>
+            <h2>Weekly plan</h2>
+        </div>
+
+        <div>
+            <input id="planTitle" class="title-input" placeholder="Title" />
+            <div class="date" id="dateDisplay"></div>
+        </div>
     </header>
 
 
@@ -39,122 +45,77 @@
         <div class="grid-content">
 
             <div class="grid-day">
-                <div class="day-todo">
-                    <h4>Sat</h4>
-                    <input type="text" placeholder=" your plan" class="line-input">
-                </div>
-                <div class="day-todo">
-                    <h4>Sun</h4>
-                    <input type="text" placeholder=" your plan" class="line-input">
-                </div>
-                <div class="day-todo">
-                    <h4>Mon</h4>
-                    <input type="text" placeholder=" your plan" class="line-input">
-                </div>
-                <div class="day-todo">
-                    <h4>Tue</h4>
-                    <input type="text" placeholder=" your plan" class="line-input">
-                </div>
-                <div class="day-todo">
-                    <h4>Wed</h4>
-                    <input type="text" placeholder=" your plan" class="line-input">
-                </div>
-                <div class="day-todo">
-                    <h4>Thu</h4>
-                    <input type="text" placeholder=" your plan" class="line-input">
-                </div>
-                <div class="day-todo">
-                    <h4>Fri</h4>
-                    <input type="text" placeholder=" your plan" class="line-input">
-                </div>
+                <div id="daysContainer"></div>
             </div>
 
             <div class="grid-todo">
                 <div class="goals">
                     <div class="todo-title">
                         <h3>Goals</h3>
-                        <img src="./dart.png" />
+                        <img src="./img/dart.png" />
                     </div>
-                    <input type="text" placeholder="" class="line-input">
+                    <input type="text" placeholder="" id="taskInput" class="line-input">
+                    <a id="addTaskBtn" href=""><img src="./img/add.png" width="5%"></a>
 
                     <div class="todo-list">
-                        <label class="custom-checkbox">
-                    <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-                        <input type="text" placeholder="" class="line-input">
+                        <div class="count-del">
+                            <span id="taskCounter">Tasks 0 </span>
+                            <button id="clearAllBtn">Delete All Tasks </button>
+                        </div>
                     </div>
-                    <div class="todo-list">
-                        <label class="custom-checkbox">
-                    <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-                        <input type="text" placeholder="" class="line-input">
-                    </div>
+                    <ul id="taskList"></ul>
+
                 </div>
 
 
                 <div class="Priorities">
                     <div class="todo-title">
                         <h3>Priorities</h3>
-                        <img src="./prioritize.png" />
+                        <img src="./img/prioritize.png" />
                     </div>
-                    <input type="text" placeholder="" class="line-input">
+                    <input type="text" placeholder="" id="taskInput" class="line-input">
+                    <a id="addTaskBtn" href=""><img src="./img/add.png" width="5%"></a>
+
 
                     <div class="todo-list">
-                        <label class="custom-checkbox">
-                    <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-                        <input type="text" placeholder="" class="line-input">
+                        <div class="count-del">
+                            <span id="taskCounter">Tasks 0 </span>
+                            <button id="clearAllBtn">Delete All Tasks </button>
+                        </div>
+
                     </div>
-                    <div class="todo-list">
-                        <label class="custom-checkbox">
-                    <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-                        <input type="text" placeholder="" class="line-input">
-                    </div>
+                    <ul id="taskList"></ul>
+
                 </div>
 
 
                 <div class="Notes">
                     <div class="todo-title">
                         <h3>Notes</h3>
-                        <img src="./sticky-notes.png" />
+                        <img src="./img/sticky-notes.png" />
                     </div>
-                    <input type="text" placeholder="" class="line-input">
+                    <input type="text" placeholder="" id="taskInput" class="line-input">
+                    <a id="addTaskBtn" href=""><img src="./img/add.png" width="5%"></a>
+
 
                     <div class="todo-list">
-                        <label class="custom-checkbox">
-                    <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-                        <input type="text" placeholder="" class="line-input">
+                        <div class="count-del">
+                            <span id="taskCounter">Tasks 0 </span>
+                            <button id="clearAllBtn">Delete All Tasks </button>
+                        </div>
+
                     </div>
-                    <div class="todo-list">
-                        <label class="custom-checkbox">
-                    <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-                        <input type="text" placeholder="" class="line-input">
-                    </div>
+                    <ul id="taskList"></ul>
+
                 </div>
 
-
-
-
-
-
-
             </div>
-
-
-
         </div>
 
-    </main>
 
+
+    </main>
+    <script src="./main.js"></script>
 </body>
 
 </html>
