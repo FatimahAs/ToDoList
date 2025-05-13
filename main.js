@@ -128,6 +128,120 @@ taskInput.addEventListener("keypress", (e) => {
 
 renderTasks();
 
+
+
+
+
+
+
+
+
+//let priorities = JSON.parse(localStorage.getItem("priorities")) || [];
+
+//const taskPriorities = document.getElementById("taskPriorities");
+//const addPrioritiesBtn = document.getElementById("addPrioritiesBtn");
+//const ListPriorities = document.getElementById("ListPriorities");
+//const clearAllPriorities = document.getElementById("clearAllPriorities");
+//const PrioritiesCounter = document.getElementById("PrioritiesCounter");
+
+
+//function renderTasksPriorities() {
+//    clearAllPriorities.style.display = priorities.length > 0 ? "inline-block" : "none";
+
+//    ListPriorities.innerHTML = "";
+//    priorities.forEach((task, index) => {
+//        const li = document.createElement("li");
+//        li.className = "task-item" + (task.done ? " completed" : "");
+
+//        li.innerHTML = `
+//  <div>
+//   <label class="custom-checkbox">
+//    <input type="checkbox" ${task.done ? "checked" : ""} onchange="toggleTask(${index})">
+//	  <span class="checkmark"></span>
+//    <span  id="taskTextpriorities-${index}" class="task-text">${task.text}</span>
+//	</label>
+//    <input type="text" id="editInputpriorities-${index}" class="edit-input line-input" value="${task.text}" style="display: none;">
+//  </div>
+//  <div>
+
+
+//	    <button style="background: #5d9f7c;" onclick="startEditprioritie(${index})" id="editBtnprioritie-${index}">Edit</button>
+
+//    <button style="background: #cb3b25c7;" onclick="deleteTaskprioritie(${index})">Delete</button>
+//  </div>
+//`;
+
+
+//        ListPriorities.appendChild(li);
+//    });
+//    updateCounterPriorities();
+//    localStorage.setItem("priorities", JSON.stringify(priorities));
+//}
+
+//function addTaskpriorities() {
+//    const text = taskPriorities.value.trim();
+//    if (text) {
+//        priorities.push({ text, done: false });
+//        taskPriorities.value = "";
+//        renderTasksPriorities();
+//    }
+//}
+
+
+//function startEditPrioritie(index) {
+//    const textEl = document.getElementById(`taskTextpriorities-${index}`);
+//    const inputEl = document.getElementById(`editInputpriorities-${index}`);
+//    const btn = document.getElementById(`editBtnprioritie-${index}`);
+
+//    if (btn.textContent === "Edit") {
+//        textEl.style.display = "none";
+//        inputEl.style.display = "inline";
+//        btn.textContent = "Save";
+//        inputEl.focus();
+//    } else {
+//        const newText = inputEl.value.trim();
+//        if (newText) {
+//            priorities[index].text = newText;
+//            renderTasksPriorities();
+//        }
+//    }
+//}
+
+
+
+//function deleteTaskPriorities(index) {
+//    priorities.splice(index, 1);
+//    renderTasksPriorities();
+//}
+
+//function clearAllTasksPriorities() {
+//    priorities = [];
+//    renderTasksPriorities();
+//}
+
+//function toggleTaskPriorities(index) {
+//    priorities[index].done = !priorities[index].done;
+//    renderTasksPriorities();
+//}
+
+//function editTaskPriorities(index, newText) {
+//    priorities[index].text = newText.trim();
+//    renderTasksPriorities();
+//}
+
+//function updateCounterPriorities() {
+//    const remaining = priorities.filter(task => !task.done).length;
+//    PrioritiesCounter.textContent = `${remaining} To-Do`;
+//}
+
+//addPrioritiesBtn.addEventListener("click", addTaskpriorities);
+//clearAllPriorities.addEventListener("click", clearAllPriorities);
+//taskPriorities.addEventListener("keypress", (e) => {
+//    if (e.key === "Enter") addTaskpriorities();
+//});
+
+//renderTasksPriorities();
+
 //////////// Day task ////////// 
 
 
